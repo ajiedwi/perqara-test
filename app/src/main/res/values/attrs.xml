@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomToolbar">
+        <attr name="ct_title" format="string"/>
+        <attr name="ct_show_back_button" format="boolean"/>
+        <attr name="ct_right_icon" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="HomeMenu">
+        <attr name="hm_title" format="string"/>
+        <attr name="hm_icon" format="reference"/>
+        <attr name="hm_is_active" format="boolean"/>
+    </declare-styleable>
+
+</resources>

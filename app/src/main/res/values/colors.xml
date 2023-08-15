@@ -7,4 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gallery">#eeeeee</color>
+    <color name="mine_shaft">#333333</color>
+    <color name="fiord">#455A64</color>
+    <color name="outer_space">#263238</color>
+    <color name="alabaster">#f9f9f9</color>
+    <color name="alto">#DBDBDB</color>
+    <color name="silver_chalice">#A8A8A8</color>
+    <color name="amber">#FFC107</color>
+
+    <!--  theme color  -->
+    <color name="color_primary">@color/fiord</color>
+    <color name="color_secondary">@color/outer_space</color>
+    <color name="color_on_primary">@color/gallery</color>
+    <color name="color_on_secondary">@color/gallery</color>
+    <color name="text_white">@color/gallery</color>
+    <color name="text_black">@color/mine_shaft</color>
+
 </resources>
