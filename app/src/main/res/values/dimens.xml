@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  text  -->
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_md">14sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+
+    <!--  icon  -->
+    <dimen name="icon_md">20dp</dimen>
+    <dimen name="icon_lg">24dp</dimen>
+
+    <!--  space  -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+
+    <!--  radius  -->
+    <dimen name="radius_xs">2dp</dimen>
+    <dimen name="radius_sm">4dp</dimen>
+    <dimen name="radius_md">8dp</dimen>
+
+    <!--  component  -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="home_menu_height">64dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="item_games_pic_height">96dp</dimen>
+    <dimen name="detail_games_pic_height">192dp</dimen>
+
+</resources>

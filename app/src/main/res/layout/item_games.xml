@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/space_md"
+    android:paddingVertical="@dimen/space_sm">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_games_pic_height"
+        android:layout_weight="2"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/space_sm">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_md"
+            tools:text="Title Of the Movies"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/silver_chalice"
+            android:fontFamily="@font/poppins_medium"
+            tools:text="Title Of the Movies"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/icon_md"
+                android:layout_height="@dimen/icon_md"
+                app:srcCompat="@drawable/ic_star_white"
+                app:tint="@color/amber"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/silver_chalice"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="@dimen/space_xs"
+                android:layout_marginStart="@dimen/space_sm"
+                tools:text="5.0"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

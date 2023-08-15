@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Perqara Test</string>
+
+    <string name="for_you">For You</string>
+    <string name="your_favourite">Favourite</string>
+    <string name="search">Search</string>
+    <string name="detail">Detail</string>
+
 </resources>

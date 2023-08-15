@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pages.main.MainActivity">
+
+    <com.ajiedwi.perqaratest.components.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ct_title="@string/detail"
+        app:ct_show_back_button="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_games_pic_height"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/silver_chalice"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="@dimen/space_md"
+                tools:text="Title Of the Movies"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_md"
+                android:layout_marginHorizontal="@dimen/space_md"
+                tools:text="Title Of the Movies"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/silver_chalice"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="@dimen/space_md"
+                tools:text="Title Of the Movies"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/space_md"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_md"
+                    android:layout_height="@dimen/icon_md"
+                    app:srcCompat="@drawable/ic_star_white"
+                    app:tint="@color/amber"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/silver_chalice"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/space_xs"
+                    android:layout_marginStart="@dimen/space_sm"
+                    tools:text="5.0"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_md"
+                    android:layout_height="@dimen/icon_md"
+                    app:srcCompat="@drawable/ic_play_filled_white"
+                    android:layout_marginStart="@dimen/space_sm"
+                    app:tint="@color/fiord"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/silver_chalice"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/space_xs"
+                    android:layout_marginStart="@dimen/space_sm"
+                    tools:text="200 played"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/silver_chalice"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="@dimen/space_md"
+                android:layout_marginTop="@dimen/space_sm"
+                tools:text="Title Of the Movies"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
