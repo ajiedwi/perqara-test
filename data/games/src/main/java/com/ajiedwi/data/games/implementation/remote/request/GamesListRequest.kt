@@ -12,7 +12,7 @@ data class GamesListRequest(
         query["page_size"] = pageSize
         query["page"] = page
         if (apiKey.isNotEmpty()) query["key"] = apiKey
-        if (!keyword.isEmpty()) query["search"] = keyword
+        if (keyword.isNotEmpty()) query["search"] = keyword
         return query
     }
 }

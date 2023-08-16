@@ -1,10 +1,8 @@
 package com.ajiedwi.data.games.implementation.mapper
 
-import com.ajiedwi.data.games.api.model.Game
 import com.ajiedwi.data.games.api.model.GameDetail
 import com.ajiedwi.data.games.implementation.local.entities.GameEntity
 import com.ajiedwi.data.games.implementation.remote.response.GameDetailResponse
-import com.ajiedwi.data.games.implementation.remote.response.GameResponse
 
 fun GameDetailResponse.toModel() = GameDetail(
     id = id ?: 0,
