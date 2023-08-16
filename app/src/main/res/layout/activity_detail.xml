@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:ct_title="@string/detail"
-        app:ct_show_back_button="true"/>
+        app:ct_show_back_button="true"
+        app:ct_right_icon="@drawable/ic_favourite_outline_white"/>
 
     <ScrollView
         android:layout_width="match_parent"

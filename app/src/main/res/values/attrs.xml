@@ -4,7 +4,7 @@
     <declare-styleable name="CustomToolbar">
         <attr name="ct_title" format="string"/>
         <attr name="ct_show_back_button" format="boolean"/>
-        <attr name="ct_right_icon" format="boolean"/>
+        <attr name="ct_right_icon" format="reference"/>
     </declare-styleable>
 
     <declare-styleable name="HomeMenu">

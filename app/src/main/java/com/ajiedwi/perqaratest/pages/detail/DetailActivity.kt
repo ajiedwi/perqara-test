@@ -7,6 +7,7 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.ajiedwi.perqaratest.R
 import com.ajiedwi.perqaratest.databinding.ActivityDetailBinding
+import com.ajiedwi.perqaratest.extensions.getDrawableInt
 import com.ajiedwi.perqaratest.extensions.loadImage
 import com.ajiedwi.perqaratest.extensions.toHtml
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,12 +26,17 @@ class DetailActivity : AppCompatActivity() {
         collectFlow()
         initView()
         viewModel.fetchGameDetail(gameId = id)
+        viewModel.checkIsFavourite(gameId = id)
     }
 
     private fun initView(){
         with(viewBinding){
             toolbar.onBackButtonClicked = {
                 onBackPressedDispatcher.onBackPressed()
+            }
+            toolbar.onRightIconClicked = {
+                if (viewModel.isFavourite) viewModel.removeFromFavourite()
+                else viewModel.addToFavourite()
             }
         }
     }
@@ -47,6 +53,15 @@ class DetailActivity : AppCompatActivity() {
                     tvRating.text = it.rating.toString()
                     tvDescription.text = it.description.toHtml()
                 }
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.isFavouriteFlow.collect {
+                viewBinding.toolbar.rightIcon = getDrawableInt(
+                    if (it) R.drawable.ic_favourite_white
+                    else R.drawable.ic_favourite_outline_white
+                )
             }
         }
     }
