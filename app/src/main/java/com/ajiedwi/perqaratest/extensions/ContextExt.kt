@@ -15,6 +15,8 @@ fun Context.showToast(
 
 fun Context.getColor(id: Int) = ContextCompat.getColor(this, id)
 
+fun Context.getDimensInt(id: Int): Int = resources.getDimension(id).toInt()
+
 fun Context.getFont(font: Int): Typeface? {
     return ResourcesCompat.getFont(this, font)
 }

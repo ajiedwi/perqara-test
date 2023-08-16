@@ -9,6 +9,7 @@
     android:paddingVertical="@dimen/space_sm">
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv"
         android:layout_width="0dp"
         android:layout_height="@dimen/item_games_pic_height"
         android:layout_weight="2"/>
@@ -21,6 +22,7 @@
         android:layout_marginStart="@dimen/space_sm">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
             style="@style/TextTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,6 +30,7 @@
             tools:text="Title Of the Movies"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_release_date"
             style="@style/TextDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,6 +52,7 @@
                 app:tint="@color/amber"/>
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_rating"
                 style="@style/TextDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

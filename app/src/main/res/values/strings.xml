@@ -5,5 +5,9 @@
     <string name="your_favourite">Favourite</string>
     <string name="search">Search</string>
     <string name="detail">Detail</string>
+    <string name="release_date_placeholder">Release Date %1$s</string>
+    <string name="played_placeholder">%1$d Played</string>
+    <string name="loading">Loading...</string>
+    <string name="load_more">Load More</string>
 
 </resources>
