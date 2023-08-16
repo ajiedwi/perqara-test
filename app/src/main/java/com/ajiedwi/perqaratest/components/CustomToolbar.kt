@@ -1,12 +1,14 @@
 package com.ajiedwi.perqaratest.components
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.core.view.isVisible
 import com.ajiedwi.perqaratest.R
 import com.ajiedwi.perqaratest.databinding.CustomToolbarBinding
+import com.ajiedwi.perqaratest.extensions.loadImage
 import com.ajiedwi.perqaratest.extensions.showToast
 
 class CustomToolbar: LinearLayoutCompat {
@@ -28,7 +30,17 @@ class CustomToolbar: LinearLayoutCompat {
             }
         }
 
+    var rightIcon: Drawable? = null
+        set(value) {
+            field = value
+            with(viewBinding.ivRightIcon){
+                if (value!=null) this.setImageDrawable(value)
+                isVisible = value!=null
+            }
+        }
+
     lateinit var onBackButtonClicked: (() -> Unit)
+    lateinit var onRightIconClicked: (() -> Unit)
 
     private var viewBinding = CustomToolbarBinding.inflate(LayoutInflater.from(context), this, true)
 
@@ -41,6 +53,8 @@ class CustomToolbar: LinearLayoutCompat {
 
                 title = typedArray.getString(R.styleable.CustomToolbar_ct_title) ?: ""
                 showBackButton = typedArray.getBoolean(R.styleable.CustomToolbar_ct_show_back_button, false)
+                rightIcon = typedArray.getDrawable(R.styleable.CustomToolbar_ct_right_icon)
+
 
             } finally {
                 typedArray.recycle()
@@ -48,6 +62,10 @@ class CustomToolbar: LinearLayoutCompat {
 
             ivBackButton.setOnClickListener {
                 if (this@CustomToolbar::onBackButtonClicked.isInitialized) onBackButtonClicked.invoke()
+                else context.showToast("Not Implemented Yet!")
+            }
+            ivRightIcon.setOnClickListener {
+                if (this@CustomToolbar::onRightIconClicked.isInitialized) onRightIconClicked.invoke()
                 else context.showToast("Not Implemented Yet!")
             }
         }
