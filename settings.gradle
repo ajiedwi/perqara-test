@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Perqara Test"
 include ':app'
+include ':data:games'
+include ':core:network'

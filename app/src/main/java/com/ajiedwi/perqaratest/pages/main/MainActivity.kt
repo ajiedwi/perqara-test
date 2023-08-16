@@ -8,7 +8,10 @@ import com.ajiedwi.perqaratest.databinding.ActivityMainBinding
 import com.ajiedwi.perqaratest.pages.main.fragments.ForYouFragment
 import com.ajiedwi.perqaratest.pages.main.fragments.YourFavouriteFragment
 import com.ajiedwi.perqaratest.utils.MainPagerAdapter
+import dagger.hilt.android.AndroidEntryPoint
+import androidx.activity.viewModels
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var viewBinding: ActivityMainBinding
